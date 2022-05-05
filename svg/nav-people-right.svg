@@ -1,0 +1,10 @@
+<svg id="nav-people-right" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="nav-people-right-2" data-name="nav-people-right" class="cls-1" d="M22.5,45A22.5,22.5,0,0,1,6.59,6.59,22.5,22.5,0,1,1,38.41,38.41,22.353,22.353,0,0,1,22.5,45ZM20.132,13.027h0L18,15.158a.1.1,0,0,0-.025.078c.054.884,7.528,6.731,7.6,6.79L18,30.079,20.132,31.5l9-9.474-9-9Z"/>
+</svg>
