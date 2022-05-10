@@ -5,3 +5,42 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --main-font: "Roboto", sans-serif;
+}
+
+html {
+  font-family: var(--main-font);
+  font-weight: 100;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+header {
+  width: min(100%, 1920px);
+  margin: auto;
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+  background-color: blue;
+  padding: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.visitor-counter {
+  background-color: brown;
+  flex: 6;
+}
+
+.social-net {
+  display: flex;
+  background-color: cadetblue;
+  flex: 6;
+  justify-content: end;
+}
