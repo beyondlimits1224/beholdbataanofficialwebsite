@@ -8,6 +8,7 @@
 
 :root {
   --main-font: "Roboto", sans-serif;
+  --primary-color: #fff;
 }
 
 html {
@@ -17,30 +18,7 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
-  width: min(100%, 1920px);
-  margin: auto;
-}
-
-.flex-container {
-  width: 100%;
-  display: flex;
-  background-color: blue;
-  padding: 1rem;
-}
-
-ul {
-  list-style-type: none;
-}
-
-.visitor-counter {
-  background-color: brown;
-  flex: 6;
-}
-
-.social-net {
-  display: flex;
-  background-color: cadetblue;
-  flex: 6;
-  justify-content: end;
+footer {
+  background-color: #060606;
+  color: var(--primary-color);
 }
