@@ -9,6 +9,10 @@
 :root {
   --main-font: "Roboto", sans-serif;
   --primary-color: #fff;
+  --secondary-color: #f5f5f5;
+  --bg-color: rgb(19, 2, 100);
+  --main-container-padding: 16px 205px;
+  --second-container-padding: 13px 40px;
 }
 
 html {
@@ -16,9 +20,120 @@ html {
   font-weight: 100;
   font-size: 16px;
   scroll-behavior: smooth;
+  background-color: var(--bg-color);
+  width: 100%;
+  height: 100%;
 }
 
-footer {
-  background-color: #060606;
-  color: var(--primary-color);
+.flex-container {
+  display: flex;
+  padding: var(--main-container-padding);
+  border: 0.5px solid red;
+  overflow: hidden;
+}
+
+.container {
+  padding: var(--main-container-padding);
+  border: 0.5px solid yellow;
+}
+
+.text-dark {
+  color: #000000;
+}
+
+.text-orange {
+  color: #ef7f19;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: relative;
+  width: min(120rem, 100%);
+  background-color: var(--primary-color);
+  margin: auto;
+}
+
+header span {
+  font-weight: bold;
+}
+
+.eye {
+  display: none;
+  flex: 50%;
+}
+
+.eye img {
+  cursor: pointer;
+}
+
+.visitor-counter {
+  flex-basis: 50%;
+  display: block;
+}
+
+.social-media {
+  flex-basis: 50%;
+  text-align: end;
+}
+
+.social-media svg:not(:last-child) {
+  margin: 0 0.625rem 0 0;
+}
+
+:is(.yt, .twitter, .ig, .fb) {
+  fill: #aea9a9;
+  cursor: pointer;
+  transition: fill 0.5s ease-in;
+  -webkit-transition: fill 0.5s ease-in;
+  -o-transition: fill 0.5s ease-in;
+  -moz-transition: fill 0.5s ease-in;
+}
+
+:is(.yt, .twitter, .ig, .fb):hover {
+  fill: #363434;
+  cursor: pointer;
+}
+
+/* media queries */
+
+/* 1920 */
+@media only screen and (max-width: 120rem) and (orientation: portrait) {
+  .flex-container {
+    padding: var(--second-container-padding);
+  }
+  .container {
+    padding: var(--second-container-padding);
+  }
+
+  .eye {
+    display: block;
+  }
+
+  .visitor-counter {
+    display: none;
+  }
+}
+
+/* 1366 */
+@media only screen and (max-width: 85.375rem) {
+  .flex-container {
+    padding: var(--second-container-padding);
+  }
+  .container {
+    padding: var(--second-container-padding);
+  }
+  .eye {
+    display: block;
+  }
+
+  .visitor-counter {
+    display: none;
+  }
 }
